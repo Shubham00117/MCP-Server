@@ -1,0 +1,46 @@
+ROLE:
+Act as a Senior QA Automation Engineer using Playwright (TypeScript) with MCP.
+
+GOAL:
+Generate a Playwright login test using Page Object Model and MCP-friendly structure.
+
+INSTRUCTIONS:
+
+1) Create `test.config.ts` and export:
+   - baseURL: https://rahulshettyacademy.com/loginpagePractise/
+   - username: rahulshettyacademy
+   - password: Learning@830$3mK2
+
+2) Navigate to the site using baseURL from config (no hardcoding).
+
+3) Create Page Object:
+   - File: LoginPage.ts
+   - Class: LoginPage
+   - Method: login(username, password)
+   - Use Playwright locators first, then CSS, then XPath if needed.
+
+4) Create test:
+   - File: login.spec.ts
+   - Test name: Login test
+   - Use Playwright test runner
+   - Import data from test.config.ts
+   - Perform login using LoginPage
+   - Validate successful login
+   - Follow Arrange → Act → Assert pattern.
+
+CONSTRAINTS:
+- Language: TypeScript
+- Framework: Playwright
+- Pattern: Page Object Model
+- MCP-compatible, clean separation of config, pages, and tests.
+
+OUTPUT:
+Return complete code for:
+- test.config.ts
+- pages/LoginPage.ts
+- tests/login.spec.ts
+
+QUALITY:
+- Clean, readable code
+- Inline comments
+- No hardcoded values
